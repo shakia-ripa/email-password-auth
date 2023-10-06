@@ -1,7 +1,10 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
 
+
 const HeroRegister = () => {
+
+    
 
     const handleRegister = e =>{
         e.preventDefault();
@@ -15,6 +18,7 @@ const HeroRegister = () => {
         })
         .catch(error =>{
             console.log(error.message);
+            
         })
     }
 
@@ -43,6 +47,7 @@ const HeroRegister = () => {
                             <button className="btn btn-accent">Register</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
